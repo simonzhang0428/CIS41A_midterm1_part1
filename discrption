@@ -1,0 +1,80 @@
+Midterm 1 - Part 1
+Due May 24 by 11:59pm Points 20
+Submitting a file upload File Types py
+Available May 7 at 2pm - May 24 at 11:59pm 17 days
+
+Focus on Software Engineering: Using Functions in a Menu-Driven Program
+
+
+
+CONCEPT: Functions are ideal for use in menu-driven programs. When the user selects an item from a menu, the program can call the appropriate function.
+
+De Anza College Menu.jpg
+
+Write a menu-driven program for De Anza College Food Court. (You need to use functions!)
+
+Display the food menu to a user (Just show the 5 options' names and prices - No need to show the Combos or the details!)
+Use numbers for the options and for example "6" to exit.
+Ask the user what he/she wants and how many of it. (Check the user inputs) AND use strip() function to strip your inputs(if needed)
+Keep asking the user until he/she chooses the exit option.
+(You can pass quantity1, quantity2, quantity3, quantity4 & quantity5 to save the quantities of the orders)
+
+Calculate the price.
+Ask the user whether he/she is a student or a staff. There is no tax for students and 9% tax for staffs. Add the tax price to the total price.
+Tax Cupertino 9.000% Santa Clara
+
+Display the bill to the user. The bill includes:
+The food items
+The quantities
+The cost of them
+The total before tax
+Tax amount
+Total price after tax
+
+
+You can have your own design but you need to have a main function and get started from the main function.
+
+For example:
+
+def main():
+
+   displayMenu()
+
+   .
+
+   .
+
+   displayBill(..)
+
+
+
+main()
+
+
+
+or
+
+if __name__ == "__main__":
+     main()
+
+
+
+The name of functions also up to your design but the names should show what the functions do.
+
+
+
+Midterm part 1.jpg
+
+Only display 2 decimal points when displaying all the numbers.
+
+
+Put at least two outputs  (results after you run your code) at the end of your code as a multi-line comment.
+
+
+Don't forget to put your name and a short description of your code on the top on your code.
+
+
+Don't forget to test your code with Positive and Negative Testing! (For more information see this page Testing)
+Your functions should have a docstring which is a short description about what the function is and what it does.
+Submit your code here.
+
