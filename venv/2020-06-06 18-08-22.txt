@@ -1,0 +1,9 @@
+Your bill:
+ De Anza Burger       Qty: 0          Price: $5.25       Total: $0.00      
+ Bacon Cheese         Qty: 0          Price: $5.75       Total: $0.00      
+ Mushroom Swiss       Qty: 0          Price: $5.95       Total: $0.00      
+ Western Burger       Qty: 0          Price: $5.95       Total: $0.00      
+ Don Cali Burger      Qty: 0          Price: $5.95       Total: $0.00      
+--------------------------------------------------
+Price before tax:0.0
+Price after tax:0.0
