@@ -107,4 +107,3 @@ class Order:
             fileHandleToSaveTheBill.write("-" * 50 + '\n')
             fileHandleToSaveTheBill.write("Price before tax:" + str(round(self._priceBtax, 2)) + '\n')
             fileHandleToSaveTheBill.write("Price after tax:" + str(round(self._priceAtax, 2)) + '\n')
-
