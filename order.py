@@ -24,7 +24,7 @@ class Order:
         number = 1
         for i in range(len(self.burgers)):
             print("{a}. {b:15s} {c:8.2f}".format(a=number, b=self.burgers[i].get_name(), c=self.burgers[i].get_price()))
-            i += 1
+            number += 1
         print("6. Exit")
 
     def getInputs(self):
@@ -108,11 +108,3 @@ class Order:
             fileHandleToSaveTheBill.write("Price before tax:" + str(round(self._priceBtax, 2)) + '\n')
             fileHandleToSaveTheBill.write("Price after tax:" + str(round(self._priceAtax, 2)) + '\n')
 
-    def create_order(self):
-        """
-        Create an order
-        """
-        print('now add an order:')
-        self.getInputs()
-        self.calculate()
-        self.printBill()
