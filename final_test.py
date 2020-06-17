@@ -1,4 +1,5 @@
 from order import Order
+import csv
 
 if __name__ == "__main__":
 
@@ -18,9 +19,31 @@ if __name__ == "__main__":
     #         print("The system is shutting down!")
     #         break
     #
-    choice = input("Choose from below: " + '\n' + "C:Create" + '\n' + "R:Remove" + '\n' + "U:Update" + '\n' + "D:Delete" + '\n')
+
+    print("C:Create \t R:Read \t U:Update \t D:Delete")
+    choice = input("Enter your choice: ")
+
+    order = Order()
+
     if choice.lower() == 'c':
-        print('Now creating an order')
+        print('Now creating an order...')
+        order.displayMenu()
+        order.getInputs()
+        order.calculate()
+        order.printBill()
+
+    elif choice.lower() == 'r':
+        print("Now read the default file: sample_input.csv")
+
+        with open("sample_input.csv") as infile:
+            reader = csv.reader(infile)
+
+            for line in reader:
+                index_burger = int(line[0])
+                order.burgers[index_burger-1].quantity = line[-1]
+
+        order.calculate()
+        order.printBill()
 
 
 """
