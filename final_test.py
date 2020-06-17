@@ -2,21 +2,25 @@ from order import Order
 
 if __name__ == "__main__":
 
-    while True:
-        order = Order()
-        order.displayMenu()
-        order.getInputs()
-        order.calculate()
-        order.printBill()
-        order.saveToFile()
-
-        # help(order)
-
-        userInputToContinue = input("Continue for another order(Any keys= Yes, n= No)?")
-
-        if userInputToContinue.lower() == 'n':
-            print("The system is shutting down!")
-            break
+    # while True:
+    #     order = Order()
+    #     order.displayMenu()
+    #     order.getInputs()
+    #     order.calculate()
+    #     order.printBill()
+    #     order.saveToFile()
+    #
+    #     # help(order)
+    #
+    #     userInputToContinue = input("Continue for another order(Any keys= Yes, n= No)?")
+    #
+    #     if userInputToContinue.lower() == 'n':
+    #         print("The system is shutting down!")
+    #         break
+    #
+    choice = input("Choose from below: " + '\n' + "C:Create" + '\n' + "R:Remove" + '\n' + "U:Update" + '\n' + "D:Delete" + '\n')
+    if choice.lower() == 'c':
+        print('Now creating an order')
 
 
 """
