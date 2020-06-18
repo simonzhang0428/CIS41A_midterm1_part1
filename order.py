@@ -1,3 +1,9 @@
+# CIS41A Final
+# Author: Simon Zhang
+# 06/18/2020
+# Order class, including displayMenu, getInputs, printBill, saveToFile
+
+
 from burger import *
 
 

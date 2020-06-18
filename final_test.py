@@ -1,3 +1,9 @@
+# CIS41A Final
+# Author: Simon Zhang
+# 06/18/2020
+# Driver class, including CRUD: Create/Read/Update/Delete/Exit
+
+
 from order import Order
 import csv
 
@@ -17,15 +23,14 @@ if __name__ == "__main__":
             order.printBill()
 
         elif choice.lower() == 'r':
+            print("Now read the default file (sample_input.csv)...")
+            order_read = Order()
+
             # import os
             #
             # cwd = os.getcwd()  # Get the current working directory (cwd)
             # files = os.listdir(cwd)  # Get all the files in that directory
             # print("Files in %r: %s" % (cwd, files))
-
-            print("Now read the default file (sample_input.csv)...")
-            order_read = Order()
-
             with open("/Users/jingping/Documents/GitHub/CIS41A_midterm1_part1/venv/sample_input.csv") as infile:
                 reader = csv.reader(infile)
 

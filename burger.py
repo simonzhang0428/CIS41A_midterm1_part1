@@ -1,7 +1,7 @@
 # CIS41A Final
 # Author: Simon Zhang
-# 06/06/2020
-# This program display the menu, get order from user, compute bill and display it
+# 06/18/2020
+# Burger class, special Burger1,2,3,4,5 extends Burger
 
 
 class Burger:
